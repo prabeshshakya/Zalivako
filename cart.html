@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <title>Zalivako</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Custom built theme - This already includes Bootstrap 4 -->
+  <link rel="stylesheet" href="css/mytheme.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/solid.css" integrity="sha384-VGP9aw4WtGH/uPAOseYxZ+Vz/vaTb1ehm1bwx92Fm8dTrE+3boLfF1SpAtB1z7HW" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/regular.css" integrity="sha384-ZlNfXjxAqKFWCwMwQFGhmMh3i89dWDnaFU2/VZg9CvsMGA7hXHQsPIqS+JIAmgEq" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/brands.css" integrity="sha384-rf1bqOAj3+pw6NqYrtaE1/4Se2NBwkIfeYbsFdtiR6TQz0acWiwJbv1IM/Nt/ite" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/fontawesome.css" integrity="sha384-1rquJLNOM3ijoueaaeS5m+McXPJCGdr5HcA03/VHXxcp2kX2sUrQDmFc3jR5i/C7" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.css" />
+  <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+
+</head>
+<body>
+
+<div class="header">
+      <div class="brand-identity d-flex align-items-center justify-content-center"> 
+          <img src="img/logo.png" alt="site-logo" id="logo" class="img-fluid pt-3 pb-2">
+      </div>
+
+      <nav class="navbar navbar-expand-lg navbar-light">
+        <div class="collapse navbar-collapse" id="navbarTogglerDemo03">
+          <ul class="navbar-nav d-flex justify-content-between ml-auto mr-auto">
+            <li class="nav-item pr-lg-5 pl-lg-5">
+              <a class="nav-link text-uppercase" href="#!">SHOP</a>
+            </li>
+            <li class="nav-item pr-lg-5 pl-lg-5">
+              <a class="nav-link text-uppercase" href="#!">ABOUT</a>
+            </li>
+            <li class="nav-item pr-lg-5 pl-lg-5">
+              <a class="nav-link text-uppercase" href="#!">CONTACT</a>
+            </li>
+            <li class="nav-item pr-lg-5 pl-lg-5">
+              <a class="nav-link text-uppercase" href="#!">FAQ</a>
+            </li>
+            <li class="nav-item pr-lg-5 pl-lg-5">
+              <a class="nav-link text-uppercase" href="#!">NEWSLETTER</a>
+            </li>
+          </ul>
+        </div>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+          data-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03"
+          aria-expanded="false"
+          aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button> 
+      </nav>
+      <div class="cart">
+        <button><i class="fas fa-shopping-bag"></i></button>
+        <span class="count">10</span>
+      </div>
+</div>
+
+<div class="site-body">
+  <div class="container">
+    <div class="cart-container mb-5 mt-5">
+      <h2 class="large-title mb-4">Cart</h2>
+      <div class="shopping-cart">
+
+        <div class="column-labels d-flex">
+          <label class="product-image">Image</label>
+          <label class="product-details">Product</label>
+          <label class="product-price">Price</label>
+          <label class="product-quantity">Quantity</label>
+          <label class="product-removal">Remove</label>
+          <label class="product-line-price">Total</label>
+        </div>
+
+        <div class="product d-flex">
+          <div class="product-image">
+            <img src="img/1.jpg">
+          </div>
+          <div class="product-details">
+            <div class="product-title font-weight-bold">Cocoon Blue</div>
+            <p class="product-description">With an extra dose of blue, white, yellow, purple, grey and red colors, you can boost the positive vibes around you. This reversible cocoon looks stunning and will bring out your natural radiance.</p>
+          </div>
+          <div class="product-price"> &euro; 29</div>
+          <div class="product-quantity">
+            <input type="number" value="1" min="1">
+          </div>
+          <div class="product-removal">
+            <button class="remove-product far fa-trash-alt">
+            </button>
+          </div>
+          <div class="product-line-price font-weight-bold"> &euro; 29</div>
+        </div>
+
+        <div class="totals">
+          <div class="totals-item">
+            <label class="font-weight-bold">Subtotal</label>
+            <div class="totals-value font-weight-bold" id="cart-subtotal"> &euro; 29</div>
+          </div>
+          <div class="totals-item">
+            <label class="font-weight-bold">Tax (5%)</label>
+            <div class="totals-value font-weight-bold" id="cart-tax">1.45</div>
+          </div>
+          <div class="totals-item">
+            <label class="font-weight-bold">Shipping</label>
+            <div class="totals-value font-weight-bold" id="cart-shipping"> &euro; 15.00</div>
+          </div>
+          <div class="totals-item totals-item-total">
+            <label class="font-weight-bold">Grand Total</label>
+            <div class="totals-value font-weight-bold" id="cart-total">45.45</div>
+          </div>
+        </div>
+        
+        <div class="text-right pt-5">
+          <button class="btn btn-outline-dark no-radius site-btn">Checkout</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="footer p-3 mt-5">
+  <div class="d-lg-flex justify-content-lg-between flex-wrap justify-content-center text-center d-block">
+    <div class="company-part-links d-lg-flex d-block justify-content-center">
+      <div class="footer-brand bordered-right pr-lg-3 mr-lg-3 mb-2 mb-lg-0">
+          <a href="" class="text-uppercase footer-link">Zalivako &copy 2018</a>
+      </div>
+      <div class="footer-link-list mb-2 mb-lg-0">
+        <a href="" class="footer-link text-uppercase mr-md-3 d-block d-md-inline-block">TERMS AND CONDITIONS</a>
+        <a href="" class="footer-link text-uppercase mr-md-3 d-block d-md-inline-block">PRIVACY POLICY</a>
+        <a href="" class="footer-link text-uppercase d-block d-md-inline-block">SHIPPING</a>
+      </div>
+    </div>
+    <div class="contact-part d-lg-flex d-block">
+      <div class="contact-part-list bordered-right mr-md-3 mb-2 mb-lg-0">
+        <a href="" class="footer-link text-uppercase mr-md-3 d-block d-md-inline-block">Call Us: +33 6 80 24 93 63</a>
+        <a href="" class="footer-link text-uppercase mr-md-3 d-block d-md-inline-block">info@zalivako.com</a>
+      </div>
+      <div class="social-list">
+        <a href="" class="footer-link mr-2"><i class="fab fa-facebook-square"></i></a>
+        <a href="" class="footer-link"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- jQuery first, then Popper.js, then Bootstrap JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.4.1/jquery.fancybox.min.js"></script>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+<script>
+      $(window).on('load resize orientationchange', function() {
+          $('.product-slides').each(function(){
+              var $carousel = $(this);
+              /* Initializes a slick carousel only on mobile screens */
+              // slick on mobile
+              if ($(window).width() > 991) {
+                  if ($carousel.hasClass('slick-initialized')) {
+                      $carousel.slick('unslick');
+                  }
+              }
+              else{
+                  if (!$carousel.hasClass('slick-initialized')) {
+                      $carousel.slick({
+                          slidesToShow: 1,
+                          slidesToScroll: 1,
+                          mobileFirst: true,
+                          prevArrow: '<button type="button" class="slick-prev fas fa-angle-left"></button>',
+                          nextArrow: '<button type="button" class="slick-next fas fa-angle-right"></button>'
+                      });
+                  }
+              }
+          });
+      });
+
+</script>
+
+</body>
+</html>
